@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(62, 59, 59);
+}
+ 
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    top: 0;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.account-1 {
+    padding-left: 1000px;
+}

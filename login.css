@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(62, 59, 59);
+}
+
+.col-auto {
+    color: white;
+}

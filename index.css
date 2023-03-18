@@ -21,3 +21,81 @@ a {
 .account-1 {
     padding-left: 1000px;
 }
+
+input {
+    background-color: rgb(62, 59, 59);
+    border-radius: 5px;
+}
+
+.search {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#games {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    padding: 2.5em 0;
+}
+  
+#games .card {
+    max-width: 18em;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.7s;
+}
+
+
+#games .card .img-container {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+
+#games .card .container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+#games .card .container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+#games .card .container h5 {
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+#games .card .container h6 {
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+#games .card .container button{
+    background-color: white;
+    border: none;
+    border: solid 1px black;
+    margin-top: 14px;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 70%;
+    cursor: pointer;
+}
+
+#games .card .container button:hover{
+    background-color: black;
+    color: white;
+}
+
+#games .card .img-container {
+border-radius: 5px;
+}

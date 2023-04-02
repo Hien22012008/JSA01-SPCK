@@ -2,50 +2,50 @@ let games = {
     data: [
         {
             name: "The Last Of Us Part 1 Remake",
-            price: "1.399.000đ",
+            price: " 1.399.000đ",
             image: "images/the-last-of-us-1.jpg"
         },
 
         {
             name: "Ark Survival Evolved",
-            price: "186.000đ",
+            price: " 466.000đ",
             image: "images/Ark.jpg"
         },
 
         {
             name: "Grand Theft Auto V",
-            price: "455.500",
+            price: " 455.500",
             image: "images/GTAV.jpg"
         },
 
         {
             name: "Dead Space",
-            price: "990.000đ",
+            price: " 990.000đ",
             image: "images/deadspace.jpg"
         },
 
         {
             name: "The Last Of Us Prat 2",
-            price: "1.399.000đ",
+            price: " 1.399.000đ",
             image: "images/the-last-of-us-2.jpg"
         },
 
         {
             name: "Marvel's Spider-Man",
-            price: "1.139.000đ",
+            price: " 1.139.000đ",
             image: "images/spiderman.jpg"
         },
 
         {
             name: "Red Dead Redemption II",
-            price: "330.000đ",
+            price: " 330.000đ",
             image: "images/Red_Dead_Redemption_II.jpg"
         },
 
         {
-            name: "Genshin Impact",
-            price: "Free",
-            image: "images/GenshinImpact.jpg"
+            name: "Marvel's Spider Man: Miles Morales",
+            price: " 1.159.000đ",
+            image: "images/spiderman2.jpg"
         },
     ]
 };
@@ -90,7 +90,7 @@ let carts = [
 
     {
         name: "Ark Survival Evolved",
-        price: "186.000đ",
+        price: "466.000đ",
         quantity: 0,
         image: "images/Ark.jpg"
     },
@@ -131,10 +131,10 @@ let carts = [
     },
 
     {
-        name: "Genshin Impact",
-        price: "Free",
+        name: "Marvel's Spider Man: Miles Morales",
+        price: " 1.159.000đ",
         quantity: 0,
-        image: "images/GenshinImpact.jpg"
+        image: "images/spiderman2.jpg"
     }, 
 ];
 
@@ -146,3 +146,8 @@ function addToCart(name) {
     }
     localStorage.setItem("carts", JSON.stringify(carts));
 }
+
+
+
+
+

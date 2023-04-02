@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
-
 }
 
 body {
@@ -11,15 +9,17 @@ body {
 }
 
 .form-control {
+    background-color: rgb(80, 77, 77);
     color: white;
-    margin-top: 30px ;
+    width: 300px;
 }
 
-.form-check-label {
-    color: white;
+form {
+    background-color: rgb(100, 96, 96); 
+    width: 350px;
+    height: 450px;
+    border-radius: 5px;
 }
-
-
 
 .container {
     background-image: url(images/bgLogin.jpg);
@@ -31,20 +31,12 @@ body {
     align-items: center;
 }
 
-.mb-3 {
-  
+.form-group {
+    padding-top: 20px;
+    padding-left: 25px;
 }
 
-h1 {
-    color: white;
-    font-size: larger;
-    padding-left: 25%;
-}
-
-.btn-primary {
-    display: flex;
-}
-#form{
+#form {
     padding: 20px 20px;
     border-radius: 10px;
     width: 450px;
@@ -55,14 +47,4 @@ h1 {
     z-index: 10000;
     display:flex;
     flex-direction: column;
-}   
-
-.btn-login{
-    width: 100px;
-}
-.panel-login{
-    display: flex;
-}
-.btn-signup{
-    margin-left:20px;
 }

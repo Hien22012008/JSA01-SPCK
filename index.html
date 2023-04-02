@@ -1,32 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>Sản phẩm cuối khóa</title>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
-           <a href="#">DISCOVER</a>
-                <a class="account-1" href="cart.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-                <a class="account-2" href="login.html">
-                    <i class="fa-solid fa-user" id="users"></i>
-                </a>
-        </div>
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="search store">
-        </div>
-        <div id="games">
+            <div class="top">
+                <img src="./images/logo.jpg" width="80px">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Search store">
+                </div>
+            <a href="#">DISCOVER</a>
+
+            </div>
+           <div class="content-header">
+
+            <a class="account-1" href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a class="account-2" href="login.html">
+                <i class="fa-solid fa-user" id="users"></i>
+            </a>
+           </div>
             
         </div>
+        <div class="slide">
+            <img src="./images/Ark.png" width="50%"  class="slideshow">
+            <img src="./images/the-last-of-us-1.png" width="50%"  class="slideshow">
+            <img src="./images/the-last-of-us-2.png" width="50%"  class="slideshow">
+            <img src="./images/deadspace.png" width="50%" class="slideshow">
+            <img src="./images/spiderman.png" width="50%" class="slideshow">
+            <script>
+                w3.slideshow(".slideshow", 2000)
+            </script>
+        </div>
+    </div>
+    <div id="games">
+
+    </div>
+    <di v class="footer">
+        <img src="./images/logo.jpg" width="80px">
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </di>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>

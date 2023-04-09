@@ -9,31 +9,33 @@ body {
 }
 
 .form-control {
-    background-color: rgb(80, 77, 77);
-    color: white;
-    width: 300px;
+    margin-top: 30px;
 }
 
-form {
-    background-color: rgb(100, 96, 96); 
-    width: 350px;
-    height: 450px;
-    border-radius: 5px;
+.form-check-label {
+    color: white;
 }
+
+
 
 .container {
     background-image: url(images/bgLogin.jpg);
     background-image: linear-gradient(rgb(0, 0, 255));
-    min-width:100%;
+    min-width: 100%;
     min-height: 710px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form-group {
-    padding-top: 20px;
-    padding-left: 25px;
+h1 {
+    color: white;
+    font-size: larger;
+    padding-left: 28%;
+}
+
+.btn-primary {
+    display: flex;
 }
 
 #form {
@@ -41,10 +43,19 @@ form {
     border-radius: 10px;
     width: 450px;
     height: 500px;
-    background-image: linear-gradient(rgb(0, 0, 255),rgb(255, 255, 0.5));
+    background-image: linear-gradient(rgb(0, 0, 255), rgb(255, 255, 0.5));
     background-image: url(images/backgroundlogin.jpg);
     position: absolute;
     z-index: 10000;
-    display:flex;
+    display: flex;
     flex-direction: column;
+}
+
+.btn-submit {
+    width: 100px;
+}
+
+.panel-submit {
+    display: flex;
+    padding-top: 20px;
 }

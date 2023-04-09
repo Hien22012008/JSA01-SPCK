@@ -47,12 +47,60 @@ let games = {
             price: " 1.159.000đ",
             image: "images/spiderman2.jpg"
         },
+
+        {
+            name: "Jurassic World Evolution 2",
+            price: " 910.000đ",
+            image: "images/jw.jpg"
+        },
+
+        {
+            name: "Jurassic World Evolution ",
+            price: " 950.000đ",
+            image: "images/jw1.jpg"
+        },
+
+        {
+            name: "Lego Jurassic World",
+            price: " 900.000đ",
+            image: "images/legoJW.jpg"
+        },
+
+        {
+            name: "Among Us",
+            price: " 47.000đ",
+            image: "images/amongus.jpg"
+        },
+
+        {
+            name: "Cyber Punk 2077",
+            price: " 971.000đ",
+            image: "images/cyberpunk-2077.jpg"
+        },
+
+        {
+            name: "World War Z Aftermath",
+            price: " 373.000đ",
+            image: "images/worldwarz.jpg"
+        },
+
+        {
+            name: "Dying Light 2 Stay Human",
+            price: " 990.000đ",
+            image: "images/dyinglight2.png"
+        },
+
+        {
+            name: "Poppy Playtime",
+            price: " 120.000đ",
+            image: "images/poppy.jpg"
+        },
     ]
 };
 
 for (let game of games.data) {
     let card = document.createElement("div");
-    card.classList.add("card") ;
+    card.classList.add("card");
 
     let img = document.createElement("img");
     img.classList.add("img-container");
@@ -113,7 +161,7 @@ let carts = [
         name: "The Last Of Us Prat 2",
         price: "1.399.000đ",
         quantity: 0,
-        image: "images/the-last-of-us-2.jpg" 
+        image: "images/the-last-of-us-2.jpg"
     },
 
     {
@@ -135,7 +183,64 @@ let carts = [
         price: " 1.159.000đ",
         quantity: 0,
         image: "images/spiderman2.jpg"
-    }, 
+    },
+
+    {
+        name: "Jurassic World Evolution 2",
+        price: " 910.000đ",
+        quantity: 0,
+        image: "images/jw.jpg"
+    },
+
+    {
+        name: "Jurassic World Evolution ",
+        price: " 950.000đ",
+        quantity: 0,
+        image: "images/jw1.jpg"
+    },
+
+    {
+        name: "Lego Jurassic World",
+        price: " 900.000đ",
+        quantity: 0,
+        image: "images/legoJW.jpg"
+    },
+
+    {
+        name: "Among Us",
+        price: " 47.000đ",
+        quantity: 0,
+        image: "images/amongus.jpg"
+    },
+
+    {
+        name: "Cyber Punk 2077",
+        price: " 971.000đ",
+        quantity: 0,
+        image: "images/cyberpunk-2077.jpg"
+    },
+
+
+    {
+        name: "World War Z Aftermath",
+        price: " 373.000đ",
+        quantity: 0,
+        image: "images/worldwarz.jpg"
+    },
+
+    {
+        name: "Dying Light 2 Stay Human",
+        price: " 990.000đ",
+        quantity: 0,
+        image: "images/dyinglight2.png"
+    },
+
+    {
+        name: "Poppy Playtime",
+        price: " 120.000đ",
+        quantity: 0,
+        image: "images/poppy.jpg"
+    },
 ];
 
 function addToCart(name) {
@@ -147,7 +252,13 @@ function addToCart(name) {
     localStorage.setItem("carts", JSON.stringify(carts));
 }
 
+const token = localStorage.getItem("auth_token");
 
+if (!token) {
+    window.location = "login.html";
+}
 
-
-
+function logout() {
+    localStorage.clear();
+    window.location = "login.html";
+}

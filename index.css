@@ -26,6 +26,7 @@ input {
     background-color: rgb(62, 59, 59);
     border-radius: 30px;
     height: 30px;
+    text-align: center;
 }
 
 .search {
@@ -41,11 +42,13 @@ i {
 .header {
     display: flex;
     align-items: center;
+    background-color: rgb(76, 73, 73);
 }
 
 .slide {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .slide img {
@@ -64,11 +67,6 @@ i {
     display: flex;
     justify-content: center;
     padding-top: 10%;
-}
-
-.icon {
-    /* padding-left: 90%;
-    padding-top: 20px; */
 }
 
 .top {

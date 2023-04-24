@@ -38,7 +38,7 @@ let games = {
 
         {
             name: "Red Dead Redemption II",
-            price: " 330.000đ",
+            price: " 1.000.000đ",
             image: "images/Red_Dead_Redemption_II.jpg"
         },
 
@@ -94,6 +94,18 @@ let games = {
             name: "Poppy Playtime",
             price: " 120.000đ",
             image: "images/poppy.jpg"
+        },
+
+        {
+            name: "Resident Evil 3",
+            price: " 699.000đ",
+            image: "images/re3.jpg"
+        },
+
+        {
+            name: "Resident Evil 4",
+            price: " 1.599.000đ",
+            image: "images/re4.jpg"
         },
     ]
 };
@@ -173,7 +185,7 @@ let carts = [
 
     {
         name: "Red Dead Redemption II",
-        price: "330.000đ",
+        price: "1.000.000đ",
         quantity: 0,
         image: "images/Red_Dead_Redemption_II.jpg"
     },
@@ -241,6 +253,20 @@ let carts = [
         quantity: 0,
         image: "images/poppy.jpg"
     },
+
+    {
+        name: "Resident Evil 3",
+        price: " 699.000đ",
+        quantity: 0,
+        image: "images/re3.jpg"
+    },
+
+    {
+        name: "Resident Evil 4",
+        price: " 1.599.000đ",
+        quantity: 0,
+        image: "images/re4.jpg"
+    },
 ];
 
 function addToCart(name) {
@@ -262,3 +288,4 @@ function logout() {
     localStorage.clear();
     window.location = "login.html";
 }
+

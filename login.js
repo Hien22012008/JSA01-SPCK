@@ -15,9 +15,10 @@ form.addEventListener("submit", (e) => {
         },
         body: JSON.stringify(body),
     }).then((response) => response.json()).then((data) => {
-      localStorage.setItem("auth_token", data.auth_token);
+      
       if (data.status === "success") {
         window.location = "index.html";
+        localStorage.setItem("auth_token", data.auth_token);
       } else {
         alert(data.message);
       }
